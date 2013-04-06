@@ -30,6 +30,7 @@ library
         Buildable: False
 
     exposed-modules: Application
+                     WaiApplication
     other-modules:   Foundation
                      Blog
                      Book
@@ -118,6 +119,8 @@ executable         yesodweb
                  , http-types                    >= 0.7        && < 0.9
                  , containers
                  , simple-sendfile               >= 0.2.1      && < 0.3
+                 , wai
+                 , warp
                  , unix
                  , transformers
                  , old-locale
